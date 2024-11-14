@@ -55,7 +55,7 @@ function getEvents() {
   var endDate = new Date();
   endDate.setHours(23, 59, 59, 999); // Set end time to the end of the day
 
-  var cal = CalendarApp.getCalendarById("shubhamc@ithena.ai"); // Get Google Calendar by its ID
+  var cal = CalendarApp.getCalendarById("youremail@yourdomain.com"); // Get Google Calendar by its ID
   var events = cal.getEvents(startDate, endDate); // Fetch events within the specified date range
 
   var lastRow = sheet.getLastRow(); // Get the last row in the sheet to start appending events
